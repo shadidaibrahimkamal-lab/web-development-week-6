@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Plan your monthly spending with SpendWise.">
+    <title>SpendWise | Monthly Budget Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="planner">
+      <header class="intro">
+        <p class="eyebrow">A clearer view of your money</p>
+        <h1>SpendWise</h1>
+        <p class="subtitle">Plan your month, track your spending, and know what’s left.</p>
+      </header>
+
+      <section class="budget-card" aria-labelledby="planner-title">
+        <div class="card-icon" aria-hidden="true">$</div>
+        <h2 id="planner-title">Monthly budget check</h2>
+        <p>Enter your monthly budget and total expenses to calculate your remaining balance.</p>
+        <aside class="expense-examples" aria-labelledby="examples-title">
+          <h3 id="examples-title">Example monthly expenses</h3>
+          <ul>
+            <li><span>Groceries</span><span>85</span></li>
+            <li><span>Transport</span><span>25</span></li>
+            <li><span>Toiletries</span><span>18</span></li>
+          </ul>
+          <p>Sample amounts only; use the same currency as your own budget.</p>
+        </aside>
+        <button id="calculate-button" type="button">Calculate my balance</button>
+        <div id="results" class="results" aria-live="polite">
+          <p id="result-message">Your results will appear here after your budget check.</p>
+        </div>
+      </section>
+
+      <footer>Small steps today make stronger budgets tomorrow.</footer>
+    </main>
+  </body>
+</html>
